@@ -1,59 +1,209 @@
-# QuizFrontend
+🧠##**Quiz Full-Stack Application**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+📌 **Project Overview**
 
-## Development server
+This is a Full-Stack Quiz Application developed using Angular (Frontend) and FastAPI (Backend).
+The application allows users to take a quiz, submit their scores, and view a leaderboard.
 
-To start a local development server, run:
+The frontend handles the user interface and quiz interaction, while the backend manages quiz data, score submission, and leaderboard APIs.
 
-```bash
+🧩 **Project Type**
+
+✅ Full-Stack Web Application
+
+Frontend: Angular
+
+Backend: FastAPI (Python)
+
+🎯 **What We Did in This Project**
+
+Frontend:
+
+Created a responsive quiz UI using Angular
+
+Displayed quiz questions dynamically
+
+Collected user answers
+
+Calculated user score
+
+Sent score data to backend using HTTP requests
+
+Displayed leaderboard data
+
+Backend:
+
+Built REST APIs using FastAPI
+
+Returned quiz questions to frontend
+
+Accepted username and score submissions
+
+Sorted scores to create a leaderboard
+
+Enabled CORS to allow frontend-backend communication
+
+Prepared MongoDB connection for future database storage
+
+🛠️ #**Technologies Used**
+
+🔹 **Frontend Technologies**
+
+Angular
+
+TypeScript
+
+HTML
+
+CSS
+
+Bootstrap (optional)
+
+🔹 **Backend Technologies**
+
+Python
+
+FastAPI
+
+Pydantic
+
+MongoDB
+
+PyMongo
+
+Uvicorn
+
+CORS Middleware
+
+📂 **Project Structure**
+
+quiz-fullstack/
+│
+├── frontend/                # Angular frontend
+│   ├── src/
+│   ├── angular.json
+│   └── package.json
+│
+├── backend/                 # FastAPI backend
+│   ├── main.py
+│   ├── db.py
+│   └── requirements.txt
+│
+└── README.md
+
+🔹 Frontend Details (Angular)
+
+Runs on: http://localhost:4200
+
+Fetches quiz questions from backend
+
+Sends user score to backend
+
+Displays leaderboard
+
+Run Frontend
+cd frontend
+npm install
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔹 Backend Details (FastAPI)
 
-## Code scaffolding
+Runs on: http://127.0.0.1:8000
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Provides quiz and leaderboard APIs
 
-```bash
-ng generate component component-name
-```
+API Endpoints
+Method	Endpoint	Description
+GET	/	Home route
+GET	/quiz	Get quiz questions
+POST	/submit_score	Submit username & score
+GET	/leaderboard	Get leaderboard
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🚀 **How to Run the Project (Step-by-Step)**
 
-```bash
-ng generate --help
-```
+✅ **Backend Setup**
 
-## Building
+Install Python (3.8+)
 
-To build the project run:
+python --version
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Install dependencies
 
-## Running unit tests
+pip install fastapi uvicorn pymongo
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+Start MongoDB
+Make sure MongoDB is running on:
 
-## Running end-to-end tests
+mongodb://localhost:27017/
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
+Run the backend server
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+uvicorn main:app --reload
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Backend available at:
+
+http://127.0.0.1:8000
+
+
+Swagger API Docs:
+
+http://127.0.0.1:8000/docs
+
+✅ **Frontend Setup**
+
+Go to frontend folder
+
+cd frontend
+
+
+Install packages
+
+npm install
+
+
+Run Angular app
+
+ng serve
+
+
+Frontend available at:
+
+http://localhost:4200
+
+🔗 **Frontend–Backend Connection**
+
+Quiz API:
+
+http://127.0.0.1:8000/quiz
+
+
+Submit score API:
+
+http://127.0.0.1:8000/submit_score
+
+
+Leaderboard API:
+
+http://127.0.0.1:8000/leaderboard
+
+
+✨ **Features**
+
+Responsive quiz interface
+
+Real-time leaderboard
+
+REST API architecture
+
+Clear separation of frontend & backend
+
+Easy to extend and scale
+
+👩‍💻 **Author**
+
+Shilpa
+Full-Stack Quiz Application 🚀
