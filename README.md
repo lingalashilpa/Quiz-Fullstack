@@ -160,7 +160,7 @@ Go to frontend folder
 cd frontend
 
 
-Install packages
+**Install packages**
 
 npm install
 
@@ -207,3 +207,4 @@ Easy to extend and scale
 
 Shilpa
 Full-Stack Quiz Application 🚀
+
